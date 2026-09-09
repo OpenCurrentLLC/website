@@ -1,83 +1,131 @@
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <title>Contact — OpenCurrent</title>
-      <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0e1b2a">
-<meta name="color-scheme" content="dark light">
-<meta name="description" content="OpenCurrent">
-<meta property="og:title" content="OpenCurrent">
-<meta property="og:description" content="Transparent data. Trustworthy solutions.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://opencurrent.example">
-<meta property="og:image" content="/assets/img/og-image.png">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/css/styles.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — OpenCurrent</title>
+  <meta name="description" content="Get in touch with OpenCurrent about water-quality forecasting, streamflow estimation, pilots, and partnerships.">
+  <meta name="theme-color" content="#0d3b5c">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://opencurrent.us/contact.html">
+  <meta property="og:site_name" content="OpenCurrent">
+  <meta property="og:title" content="Contact OpenCurrent">
+  <meta property="og:description" content="Tell us about your sites, goals, and timelines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://opencurrent.us/contact.html">
+  <meta property="og:image" content="https://opencurrent.us/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="OpenCurrent home">
+        <img class="logo" src="/assets/img/logo.svg" alt="" width="30" height="30"><span>OpenCurrent</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a class="cta" href="/contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    </head>
-    <body>
-    <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="/"><span class="brand-mark">◯</span> OpenCurrent</a>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a class="cta" href="/contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <section class="page-header">
+      <div class="media" aria-hidden="true">
+        <picture>
+          <source type="image/webp" srcset="/assets/img/banner-channels.webp">
+          <img src="/assets/img/banner-channels.jpg" alt="">
+        </picture>
+      </div>
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk</h1>
+        <p class="lead">Tell us about your sites, your goals, and your timeline. We will follow up to set up a conversation.</p>
+      </div>
+    </section>
 
-    <main>
-      <section class="page-header">
-        <div class="container">
-          <h1>Contact</h1>
-          <!--<p class="lead">Tell us about your sites, goals, and timelines. We reply within 2 business days.</p>-->
+    <section class="contact">
+      <div class="container contact-grid">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="org">Organization <span class="muted">(optional)</span></label>
+            <input id="org" type="text" name="organization" autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+
+        <aside class="aside">
+          <h3>Good things to include</h3>
+          <p>The waterbodies or basins you care about, the parameters you need to anticipate, and the decisions those forecasts would inform.</p>
+          <p>If you already have monitoring data, sensor networks, or a dashboard in use, mention that too. We build on what exists.</p>
+          <h3>Who we work with</h3>
+          <p>Water utilities, watershed groups, state and federal agencies, consultancies, and research partners.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="/"><img class="logo" src="/assets/img/logo.svg" alt="" width="30" height="30"><span>OpenCurrent</span></a>
+          <p>Transparent forecasts of water quality and streamflow for the people who manage water.</p>
         </div>
-      </section>
-
-      <section class="contact">
-        <div class="container">
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
-            <input type="hidden" name="form-name" value="contact">
-            <p class="hidden">
-              <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-            </p>
-
-            <div class="field">
-              <label for="name">Your name</label>
-              <input id="name" type="text" name="name" required>
-            </div>
-
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email" required>
-            </div>
-
-            <div class="field">
-              <label for="org">Organization (optional)</label>
-              <input id="org" type="text" name="organization">
-            </div>
-
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <button class="btn" type="submit">Send</button>
-          </form>
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
         </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© 2025 OpenCurrent</p>
-    <nav class="footer-nav">
-      <a href="/sitemap.xml">Sitemap</a>
-      <a href="/robots.txt">Robots</a>
-    </nav>
-  </div>
-</footer>
-
-    </body>
-    </html>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="/contact.html">Send us a message</a></li>
+            <!-- Add when ready:
+            <li><a href="mailto:hello@opencurrent.us">hello@opencurrent.us</a></li>
+            <li><a href="https://www.linkedin.com/company/...">LinkedIn</a></li>
+            <li>Fort Collins, Colorado</li>
+            -->
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 OpenCurrent LLC</span>
+        <span>Photography: Karsten Winegeart and Jessica Furtney via Unsplash</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

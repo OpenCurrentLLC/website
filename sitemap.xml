@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://opencurrent.example/</loc></url>
-  <url><loc>https://opencurrent.example/about.html</loc></url>
-  <url><loc>https://opencurrent.example/contact.html</loc></url>
-  <url><loc>https://opencurrent.example/thanks.html</loc></url>
+  <url><loc>https://opencurrent.us/</loc></url>
+  <url><loc>https://opencurrent.us/about.html</loc></url>
+  <url><loc>https://opencurrent.us/contact.html</loc></url>
 </urlset>
