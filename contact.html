@@ -54,11 +54,8 @@
 
     <section class="contact">
       <div class="container contact-grid">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="referral" data-netlify-recaptcha="true" action="/thanks.html" class="form">
           <input type="hidden" name="form-name" value="contact">
-          <p class="hidden">
-            <label>Don't fill this out if you're human: <input name="bot-field"></label>
-          </p>
 
           <div class="field">
             <label for="name">Your name</label>
@@ -75,10 +72,17 @@
             <input id="org" type="text" name="organization" autocomplete="organization">
           </div>
 
+          <div class="field field-ref" aria-hidden="true">
+            <label for="referral">How did you hear about us?</label>
+            <input id="referral" type="text" name="referral" tabindex="-1" autocomplete="off">
+          </div>
+
           <div class="field">
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
+
+          <div class="field captcha" data-netlify-recaptcha="true"></div>
 
           <button class="btn" type="submit">Send message</button>
         </form>

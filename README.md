@@ -13,6 +13,7 @@ Pages:
 - Styles live in `assets/css/styles.css`. Palette and type are set as CSS variables at the top.
 - Fonts (Source Serif 4, Source Sans 3) load from Google Fonts; the CSS falls back to Georgia and system sans if they fail.
 - Logo mark: `assets/img/logo.svg` (header, footer) and `assets/img/favicon.svg`. Share image: `assets/img/og-image.jpg` (1200×630).
+- Contact form spam protection: Netlify's built-in reCAPTCHA (the empty `data-netlify-recaptcha` div, filled in at deploy) plus a spam-trap field (`referral`, positioned off-screen by `.field-ref`). Submissions with `referral` filled in are discarded, so keep it out of sight and keep its name in sync with `netlify-honeypot` on the form.
 - The site domain is assumed to be `https://opencurrent.us` in canonical/OG tags, `robots.txt`, and `sitemap.xml`. Search and replace if that changes.
 
 ## Images

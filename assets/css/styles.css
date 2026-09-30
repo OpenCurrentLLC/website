@@ -159,9 +159,11 @@ section { padding: 72px 0; }
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 48px; align-items: start; }
-.form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
-.hidden { display: none; }
+.form { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); min-width: 0; }
 .field { margin: 0 0 18px; }
+/* Spam trap: kept off-screen rather than display:none so bots still fill it in */
+.field-ref { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.captcha { transform-origin: 0 0; }
 label { display: block; font-weight: 600; margin-bottom: 6px; }
 input[type="text"], input[type="email"], textarea {
   width: 100%; padding: 12px 14px; border-radius: 8px; font: inherit;
@@ -201,6 +203,14 @@ textarea { resize: vertical; min-height: 140px; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; padding: 40px 0 28px; }
   .figure, .figure.wide { max-width: none; }
   .figure img { aspect-ratio: 4 / 3; }
+}
+/* The reCAPTCHA widget is a fixed 304px wide; shrink it to fit the form on phones */
+@media (max-width: 430px) {
+  .form { padding: 20px; }
+  .captcha { transform: scale(.85); margin-bottom: 6px; }
+}
+@media (max-width: 350px) {
+  .captcha { transform: scale(.75); margin-bottom: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

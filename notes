@@ -1,0 +1,38 @@
+Taglines & 3–5 Word Hooks
+
+    Predictive intelligence for changing waters.
+
+    From grab samples to foresight.
+
+    Environmental forecasting you actually own.
+
+    Turning historical data into real-time action.
+
+    Weather forecasting, built for water.
+
+The One-Liner
+OpenCurrent turns legacy monitoring records and modern sensor networks into predictive, real-time intelligence—empowering environmental managers to anticipate change instead of reacting to it.
+
+The Vision
+Quarterly grab samples were designed for a climate that no longer exists. Today, watersheds shift faster than static monitoring can track, while the transition to continuous real-time data often abandons decades of valuable baseline records.
+
+We bridge that divide. OpenCurrent brings weather-style forecasting to water quality and quantity by anchoring modern machine learning in historical ground truth. Crucially, we reject the black box: we build with our partners, coaching internal teams to understand, run, and own the codebases they rely on.
+
+What We Do
+
+    Harmonize the Past: Unify fragmented, multi-decade sampling archives into clean, analysis-ready datasets that supercharge predictive models.
+
+    Forecast in Real Time: Blend satellite remote sensing, in-situ sensor networks, and physics-informed ML to forecast parameters like turbidity, nutrients, and flow days before issues reach the intake.
+
+    Build for Ownership: Deliver open, maintainable code alongside targeted coaching, ensuring your team has full operational control over your AI pipelines.
+
+Capabilities in the Wild
+
+    Satellite-to-Stream Water Quality: Calibrating remote sensing algorithms against historical grab samples to map lake and reservoir dynamics across space and time.
+
+    Continuous Sensor Deployment: Designing and integrating in-stream sensor arrays that translate raw voltage into immediate decision support.
+
+    Predictive ML Workflows: Training catchment-scale models that forecast acute water quality events (like post-fire sediment runoff or bloom conditions) using upstream precipitation and weather forecasts.
+
+    Institutional AI Coaching: Running hands-on sprints with municipal and watershed scientists to demystify automated workflows, Git management, and agentic coding tools.
+
